@@ -25,10 +25,10 @@ controls.update();
 const geometry = new THREE.SphereGeometry(1000, 60, 40);
 geometry.scale(-1, 1, 1);
 
-const texture = new THREE.TextureLoader().load("zzz.png");
+const texture = new THREE.TextureLoader().load("./img/loop-fix.png");
 const material = new THREE.MeshBasicMaterial({
   map: texture,
-  color: 0x888888,
+  color: 0x202020,
 });
 
 const sphere = new THREE.Mesh(geometry, material);
