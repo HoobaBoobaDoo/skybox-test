@@ -26,7 +26,11 @@ const geometry = new THREE.SphereGeometry(1000, 60, 40);
 geometry.scale(-1, 1, 1);
 
 const texture = new THREE.TextureLoader().load("zzz.png");
-const material = new THREE.MeshBasicMaterial({ map: texture });
+const material = new THREE.MeshBasicMaterial({
+  map: texture,
+  color: 0x888888,
+});
+
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
 
