@@ -28,7 +28,7 @@ geometry.scale(-1, 1, 1);
 const texture = new THREE.TextureLoader().load("./img/loop-fix.png");
 const material = new THREE.MeshBasicMaterial({
   map: texture,
-  color: 0x202020,
+  color: 0x101010,
 });
 
 const sphere = new THREE.Mesh(geometry, material);
